@@ -1,7 +1,7 @@
 package com.example;
 
 public class RoomTemperature {
-    private double temperature = 0.00;
+    private double temperature = 0;
 	private static RoomTemperature instance = null;
 	
 	private RoomTemperature() {
@@ -24,5 +24,9 @@ public class RoomTemperature {
 	
 	public void incrementTemperature(double increment) {
 		this.temperature += increment;
+	}
+
+	public void decreaseTemperature(double increment) {
+		this.temperature -= increment;
 	}
 }
