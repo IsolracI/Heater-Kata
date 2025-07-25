@@ -1,4 +1,4 @@
-package com.example.classes;
+package com.example;
 
 public class RoomTemperature {
     private double temperature = 0.00;

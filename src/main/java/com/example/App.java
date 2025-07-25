@@ -2,19 +2,13 @@ package com.example;
 
 import java.lang.ModuleLayer.Controller;
 
-import com.example.classes.GasHeater;
-import com.example.classes.RemoteCommandSensor;
-import com.example.classes.RoomTemperature;
-import com.example.interfaces.Heater;
-import com.example.interfaces.Thermometer;
-
 public class App {
     
     public static void main( String[] args ) {
     	final double MIN_TEMP = 15.0;
         final double MAX_TEMP = 21.0;
         
-        RoomTemperature temperature = RoomTemperature.getInstance();
+        RoomTemperature temperature = RoomTemperature.getInstance(); // vete tu a saber para qué, pero bueno...
         temperature.setTemperature(17);
         Heater heater = new GasHeater();
         Thermometer thermometer = new RemoteCommandSensor();
@@ -32,6 +26,6 @@ public class App {
 
         Heater grogu = new Jedi("Grogu");
         ((Jedi)grogu).speak(); // ups, The method speak() is undefined for the type HeaterJava
-*/
+
     }
 }
