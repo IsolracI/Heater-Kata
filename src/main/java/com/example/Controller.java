@@ -7,7 +7,7 @@ public class Controller {
             heater.disengage(temperature.getTemperature());
         }
         
-        while (temperature.getTemperature() < minTemp) { // I also don't undestand this whole 'static' thing, why can't I specify the interface' isn't that what I'm always suposed to do?
+        while (temperature.getTemperature() < minTemp) { // I also don't undestand this whole 'static' thing, why can't I specify the interface? isn't that what I'm always suposed to do?
             heater.engage(temperature.getTemperature());
         }
     }
